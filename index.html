@@ -329,8 +329,7 @@ Sing it [H] loud [Q] and clear [W]"></textarea>
             
             // Variables
             let currentAudioUrl = null;
-            const sunoApiKey = "2e5f23d491304b2697fd09b57fa8b6aa"; // Your Suno API key
-            
+            const sunoApiKey = process.env.SUNO_API_KEY;
             // Accordion functionality
             const accordionBtns = document.querySelectorAll('.accordion-btn');
             accordionBtns.forEach(btn => {
